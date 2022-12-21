@@ -12,6 +12,8 @@ async def send_help(message: types.Message): # объявляем функцию
 async def echo(message: types.Message): # объявляем функцию и передаем ей сообщение пользователя
     await message.answer(message.text) # дублирует сообщение пользователя
 if __name__ == '__main__': # основной код программы
+
+    
     executor.start_polling(aio_dp, skip_updates=True) # включаем сбор сообщение в телеграм
 
 # Комментарий
